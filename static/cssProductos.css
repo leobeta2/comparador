@@ -1,0 +1,108 @@
+h1{
+	font-size: 20px;
+	font-weight: normal;
+	padding:0;
+	margin: 0;
+}
+header{
+	background-color: orange;
+}
+
+.navbar-default{
+	background-color:; 
+}
+/* Botón propio
+-------------------------------------------------- */
+ 
+/* Redefine los estilos de .btn */
+/* Modificar el texto y el color de fondo en los tres estados
+   principales del botón: default, hover y active. */
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #007da7;
+}
+ 
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-ttc {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+  ...
+}
+ 
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-ttc:hover {
+  background-position: 0 -15px;
+}
+
+.posts{
+  padding: 0.5em;
+}
+
+.posts .post{
+    background: white;
+    border-radius: 0 0 0.5em 0.5em; /*para hacer las esquinas redondeadas*/
+    box-shadow: 2px 2px 10px rgba(black,0.5);
+    color: blue;
+    margin-bottom: 1em;
+} 
+
+.descripcion{
+    color: black;
+    }
+  .descripcion .detalles{
+      height: 160px;
+      margin-left: 130px;
+    }
+  .descripcion .caracteristicas{
+        margin: 0.5em 0 1.5em 0;
+    }
+  .descripcion .fecha{
+        
+        margin :0 1em 0 0;
+      }
+  .descripcion .tag{
+        background: blue;
+        border-radius: 0.5em;
+        color: white;
+        padding: 0.2em 0.5em;
+        text-decoration: none;
+      }
+
+  .descripcion .titulo{
+        color: black;
+        font-size: 18px;
+        font-style: italic;
+        margin: 0;
+        padding: 0.5em 0.5em 0 0;
+      }
+    
+    .descripcion .imagen{
+      float: left;
+      margin: 0;
+      }
+     .descripcion .imagen img{
+        height: 130px;
+        vertical-align: top;
+        width: 180px; 
+      }
+}
+
+
+@media screen and (min-width:768px){
+    .posts .post{
+      display:inline-block;
+      width:46%;
+      vertical-align:top;
+    }
+    .posts .post:nth-child(odd){
+      margin-right:2%;
+    }
+}
