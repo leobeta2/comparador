@@ -6,7 +6,7 @@ h1{
 }
 
 header{
-	background-color: #FF4500
+	background-color: #FF4500;
 }
 
 .logo .logoimg{
@@ -16,7 +16,7 @@ header{
 
 
 .navbar-default{
-	background-color:; 
+	background: linear-gradient( to bottom, #008080, #ffebcd);
 }
 /* Botón propio
 -------------------------------------------------- */
@@ -101,3 +101,6 @@ header{
   }
 }
 
+.descripcion .detalles .modelo{
+  float: right;
+}
