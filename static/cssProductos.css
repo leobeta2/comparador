@@ -4,9 +4,16 @@ h1{
 	padding:0;
 	margin: 0;
 }
+
 header{
-	background-color: orange;
+	background-color: #FF4500
 }
+
+.logo .logoimg{
+  margin-left: 1.5em;
+  border-radius: 50%;
+}
+
 
 .navbar-default{
 	background-color:; 
@@ -31,7 +38,6 @@ header{
 .btn-ttc {
   background-repeat: repeat-x;
   background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
-  ...
 }
  
 /* Estilos del estado :hover del botón */
@@ -55,54 +61,43 @@ header{
 } 
 
 .descripcion{
-    color: black;
-    }
-  .descripcion .detalles{
-      height: 160px;
-      margin-left: 130px;
-    }
-  .descripcion .caracteristicas{
-        margin: 0.5em 0 1.5em 0;
-    }
-  .descripcion .fecha{
-        
-        margin :0 1em 0 0;
-      }
-  .descripcion .tag{
-        background: blue;
-        border-radius: 0.5em;
-        color: white;
-        padding: 0.2em 0.5em;
-        text-decoration: none;
-      }
+  color: black;
+}
+.descripcion .detalles{
+  height: 160px;
+  margin-left: 130px;
+}
+.descripcion .caracteristicas{
+  margin: 0.5em 0 1.5em 0;
+}
+.descripcion .fecha{
+  float: right;
+  margin :0 1em 0 0;
+}
+.descripcion #tag{
+  background: blue;
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+}
 
-  .descripcion .titulo{
-        color: black;
-        font-size: 18px;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.5em 0 0;
+.descripcion .titulo{
+  color: black;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 0.5em 0.5em 0 0;
       }
     
-    .descripcion .imagen{
-      float: left;
-      margin: 0;
-      }
-     .descripcion .imagen img{
-        height: 130px;
-        vertical-align: top;
-        width: 180px; 
-      }
+.descripcion .imagen{
+  float: left;
+  margin: 0;
+}
+.descripcion .imagen img{
+  height: 130px;
+  vertical-align: top;
+  width: 180px; 
+  }
 }
 
-
-@media screen and (min-width:768px){
-    .posts .post{
-      display:inline-block;
-      width:46%;
-      vertical-align:top;
-    }
-    .posts .post:nth-child(odd){
-      margin-right:2%;
-    }
-}
