@@ -111,27 +111,16 @@
     <article class="post">
       <div class="descripcion">
         <figure class="imagen">
-          <img src="{{ url_for('static', filename='bootstrap/img/nokia520.jpeg') }}"/>
+          <img src="{{ url_for('static', filename='bootstrap/img/motog.jpg') }}"/>
         </figure>
         <div class="detalles">
-          <h1 class="marca">{{i[0]}}</h1>
-          <h1 class="modelo">{{i[1]}}</h1>
-          <h1 class="precio">{{i[2]}}</h1>
-          <p class="caracteristicas">
-            Tamaño de pantalla: 5 pulgadas
-            Cámara frontal: 2 megapíxeles
-            Cámara trasera: 8 megapíxeles
-            Versión de Android: 4.4 - KitKat
-            RAM: 1024 MB
-            Memoria interna: 8 GB (XT1068)/16 GB (XT1063/ XT1069)
-            Chipset: Qualcomm Snapdragon 400
-            Número de núcleos: 4
-            Velocidad máxima: 1,2 GHz
-          </p>
-          <a class="tipo" id="tag" href="">Smartphone</a>
-          <a class="so" id="tag" href="">Android</a>
-          <a class="modelo" id="tag" href="">Motorola</a>
-          <p class="fecha">Ultima Actualizacion: <strong>20</strong>min</p>
+          <h1 class="marca" style="text-transform: capitalize;">{{i[0]}}</h1>
+          <h1 class="modelo">Modelo: {{i[1]}}</h1>
+          <h1 class="precio">Precio: ${{i[2]}}</h1>
+          <p class="caracteristicas">{{i[8]}}</p>
+          <a class="marca" id="tag" href="">{{i[0]}}</a>
+          <a class="tipo" id="tag" href="">{{i[3]}}</a>
+          <p class="fecha">Fecha Actualizacion: <strong>{{i[7]}}</strong></p>
           <!--la etiqueta strong es para resaltar-->
         </div>
       </div>

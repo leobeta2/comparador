@@ -65,7 +65,7 @@ header{
 }
 .descripcion .detalles{
   height: 160px;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 .descripcion .caracteristicas{
   margin: 0.5em 0 1.5em 0;
@@ -101,6 +101,7 @@ header{
   }
 }
 
-.descripcion .detalles .modelo{
-  float: right;
+.descripcion .detalles {
+  text-transform: capitalize;
+  background: red;
 }

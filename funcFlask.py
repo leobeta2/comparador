@@ -18,7 +18,7 @@ def renderBusqueda():
 	busqueda = request.form['busqueda']
 	conn = sqlite3.connect('baseDatos')
 	c=conn.cursor()
-	query=c.execute("SELECT marca,modelo,valor,valoracion,tienda,pantalla, camara FROM smarthphone where marca=(?) ORDER BY valor",(busqueda,))
+	query=c.execute("SELECT marca, modelo, precio, tipo, valoracion, tienda, imagen, fecha, caracteristicas FROM dispositivo where marca=(?) ORDER BY precio",(busqueda,))
 	conn.commit()
 	#conn.close()
 	return render_template('listaProductos.html', productos=query)
