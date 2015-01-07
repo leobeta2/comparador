@@ -8,8 +8,8 @@ Manual de uso: en el buscador, poner "moto g", "nokia 520" o "samsung tab 3", pa
 
   Integrantes
   
-  Rodrigo flandez
-  Javier Perez
-  León Vidal
+  1.Rodrigo flandez
+  2.Javier Perez
+  3.León Vidal
 
 
