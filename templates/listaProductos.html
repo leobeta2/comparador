@@ -43,9 +43,6 @@
         <a class="filtro" href="#">
           Al mejor precio
         </a>
-        <a class="publicar pull-right btn btn-default" href="#">
-          Publicar
-        </a>
       </div>
     </div>
     <div class="usuario col-xs-1">
@@ -68,14 +65,14 @@
           <span class="icon-bar"></span>
         </button>
         
-        <a class="navbar-brand" href="">ComparadorElectronico</a>
+        <a class="navbar-brand" href="{{ url_for('renderform') }}">ComparadorElectronico</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <form class="navbar-form navbar-left" role="search" method="post" action="{{ url_for('renderBusqueda') }}">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" name="busqueda">
+            <input type="text" class="form-control" placeholder="Modelo" name="busqueda">
           </div>
           <button type="submit" class="btn btn-default">Buscar</button>
         </form>
@@ -83,13 +80,11 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tienda <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">AbcDin</a></li>
-              <li><a href="#">Falabella</a></li>
-              <li><a href="#">La Polar</a></li>
-              <li><a href="#">Paris</a></li>
-              <li><a href="#">PcFactory</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="http://www.abcdin.cl">AbcDin</a></li>
+              <li><a href="http://www.falabella.com/falabella-cl">Falabella</a></li>
+              <li><a href="http://www.lapolar.cl">La Polar</a></li>
+              <li><a href="http://www.paris.cl">Paris</a></li>
+              <li><a href="https://www.pcfactory.cl/">PcFactory</a></li>
             </ul>
           </li>
         </ul>
@@ -103,16 +98,16 @@
     <article class="post">
       <div class="descripcion">
         
-          <img class="elemento" src="{{ url_for('static', filename='imagenes/motog.jpg') }}"/>
+          <img class="elemento" src="../imagenes/motog.jpg"/>
         
         <div class="detalles">
           <h1 class="marca" style="text-transform: capitalize;">{{i[0]}}</h1>
-          <h1 class="modelo">Modelo: {{i[1]}}</h1>
-          <h1 class="precio">Precio: ${{i[2]}}</h1>
-          <p class="caracteristicas">{{i[8]}}</p>
-          <a class="marca" id="tag" href="">{{i[0]}}</a>
-          <a class="tipo" id="tag" href="">{{i[3]}}</a>
-          <a class="tienda" id="tag2" href="">{{i[5]}}</a>
+          <h1 class="modelo" style="text-transform: capitalize;">Modelo: {{i[1]}}</h1>
+          <h1 class="precio" style="text-transform: capitalize;">Precio: ${{i[2]}}</h1>
+          <p class="caracteristicas" style="text-transform: capitalize;"><strong>Caracteristicas: </strong> {{i[8]}}</p>
+          <a class="marca" id="tag" href="#" style="text-transform: capitalize;">{{i[0]}}</a>
+          <a class="tipo" id="tag" href="#" style="text-transform: capitalize;">{{i[3]}}</a>
+          <a class="tienda" id="tag2" href="#" style="text-transform: capitalize;">{{i[5]}}</a>
           <p class="fecha">Fecha Actualizacion: <strong>{{i[7]}}</strong></p>
           <!--la etiqueta strong es para resaltar-->
         </div>
