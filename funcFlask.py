@@ -18,11 +18,13 @@ def renderBusqueda():
 	busqueda = request.form['busqueda']
 	conn = sqlite3.connect('baseDatos')
 	c=conn.cursor()
-	query=c.execute("SELECT marca, modelo, precio, tipo, valoracion, tienda, imagen, fecha, caracteristicas FROM dispositivo where marca=(?) ORDER BY precio",(busqueda,))
+	query=c.execute("SELECT marca, modelo, precio, tipo, valoracion, tienda, imagen, fecha, caracteristicas FROM dispositivo where modelo=(?) ORDER BY precio",(busqueda,))
 	conn.commit()
 	#conn.close()
 	return render_template('listaProductos.html', productos=query)
 
+@app.route("/agregar/", methods=['POST'])
+def 
 
 if __name__ == "__main__":
       app.run(debug=True)

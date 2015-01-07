@@ -82,6 +82,15 @@ header{
   text-decoration: none;
 }
 
+.descripcion #tag2{
+  background: green;
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+}
+
+
 .descripcion .titulo{
   color: black;
   font-size: 18px;
@@ -90,18 +99,18 @@ header{
   padding: 0.5em 0.5em 0 0;
       }
     
-.descripcion .imagen{
+.descripcion .elemento{
   float: left;
   margin: 0;
 }
-.descripcion .imagen img{
+.descripcion .elemento{
   height: 130px;
   vertical-align: top;
   width: 180px; 
   }
 }
 
-.descripcion .detalles {
-  text-transform: capitalize;
-  background: red;
+.descripcion .tienda{
+  height: 130px;
+  width: 180px;
 }
