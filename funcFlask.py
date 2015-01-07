@@ -23,8 +23,7 @@ def renderBusqueda():
 	#conn.close()
 	return render_template('listaProductos.html', productos=query)
 
-@app.route("/agregar/", methods=['POST'])
-def 
+	
 
 if __name__ == "__main__":
       app.run(debug=True)
