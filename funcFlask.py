@@ -23,15 +23,7 @@ def renderBusqueda():
 	#conn.close()
 	return render_template('listaProductos.html', productos=query)
 
-@app.route("/tienda/", methods=['POST'])
-def renderTienda():
-	busqueda = request.form['tiend']
-	conn = sqlite3.connect('baseDatos')
-	c=conn.cursor()
-	query=c.execute("SELECT marca, modelo, precio, tipo, valoracion, tienda, imagen, fecha, caracteristicas FROM dispositivo where tienda='falabella'")
-	conn.commit()
-	#conn.close()
-	return render_template('listaProductos.html',productos=query)
+
 
 
 if __name__ == "__main__":
